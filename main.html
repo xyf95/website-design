@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+<style type="text/css">
+  @import"mystyle.css";            <!--import css file to define the style of my website-->
+</style>
+
+<script type="text/javascript" src="myscript.js"></script>      <!--import js file to define the script function of my website-->
+<title>Buzz - Yunfei Xu</title>
+<link rel="icon" href="logo.ico" type="image/x-icon">         <!--icon of title-->
+</head>
+
+<body>
+<div class="header">
+<img src="logo.png" height="50" width="50" ondragstart='return false;' oncontextmenu='return false;'>
+<p class="title1">Buzz</p>
+<p class="title2">Yunfei Xu Internship in Buzz</p>
+</div>
+
+<div id="myApp" ng-app="myApp" ng-controller="formCtrl">
+  <div class="Input1" >
+  <span>Name :</span>
+  <input placeholder="Input username" type="text" ng-model="user.name">
+  <span class="tip">Right name is Yunfei Xu</span>
+  <h4>Your input name is <span class="input">{{user.name}}</span><span class="incorrect" ng-hide="user.name==undefined||user.name==''" ng-show="user.name!=='Yunfei Xu'">&nbsp;&nbsp;&nbsp;incorrect</span><span class="correct" ng-show="user.name==='Yunfei Xu'">&nbsp;&nbsp;&nbsp;correct&nbsp;!!</span></h4>
+ </div>
+<div class="Input2" >
+  <span>Password : </span>
+  <input placeholder="Input password" type="text" ng-model="user.password">
+  <span class="tip">Right password is #allthebuzz</span>
+  <h4>Your input password is <span class="input">{{user.password}}</span><span class="incorrect" ng-hide="user.password==undefined||user.password==''" ng-show="user.password!=='#allthebuzz'">&nbsp;&nbsp;&nbsp;incorrect</span><span class="correct" ng-show="user.password==='#allthebuzz'">&nbsp;&nbsp;&nbsp;correct&nbsp;!!</span></h4>
+ </div>
+ <button class="button1" ng-click="check(user.name,user.password)">Submit</button>
+ <button class="button2" ng-click="reset()">Reset</button>
+</div>
+
+<a href="http://yunfei.wy11.com/" target="view_window" >
+<img id="loginLogo" src="loginLogo.png" height="500" width="500" ondragstart='return false;' oncontextmenu='return false;'>
+</a>
+
+<div class="footer">
+<img src="yunfei.png" height="50" width="50" ondragstart='return false;' oncontextmenu='return false;'>
+<p class="title1">Designed by Yunfei Xu</p>
+<span id="time"></span>
+
+
+</div>
+</body>
+</html>

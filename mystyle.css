@@ -1,0 +1,179 @@
+
+body {
+	background-color:  #33CCFF;
+	  margin: 0;
+}
+
+
+
+.header{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+	background-color: blue;
+	height: 64px;
+	padding: 0 16px;
+	align-items: center;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+  
+ .information{
+    zoom: 150%;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+
+
+.header .title1 {
+    color: white;
+    position: relative;
+    left: 5px;
+    font-size:150%;
+}
+
+.header .title2 {
+    color: white;
+    position: relative;
+    left: 350px;
+    font-weight:bold;
+    font-size:200%;
+}
+
+#myApp{
+	position: fixed;
+	left: 120px;
+	top: 90px;
+	zoom: 170%;
+}
+
+#myApp .button1{
+	position: fixed;
+	left: 140px;
+	background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#myApp .button2{
+	position: relative;
+	left: 150px;
+background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+
+}
+.input{
+	color: yellow;
+}
+
+.tip {
+    visibility: hidden;
+    width: 250px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px 5px;
+    border-radius: 6px;
+    font-size: 50%;
+ 
+    /* 定位 */
+    position: relative;
+    z-index: 1;
+}
+
+.Input1:hover .tip {
+    visibility: visible;
+}
+
+.Input2:hover .tip {
+    visibility: visible;
+}
+
+.incorrect{
+	color: red;
+	font-size: 80%;
+}
+
+.correct{
+	color: green;
+	font-size: 80%;
+}
+
+.table{
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    font-weight:bold;
+    zoom: 150%;
+}
+
+.table .th{
+    color: black;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	display: flex;
+	background-color: blue;
+	height: 56px;
+	padding: 0 16px;
+	align-items: center;
+    box-shadow: 0 2px 4px 5px rgba(0,0,0,.2)
+}
+
+.footer .title1 {
+    color: white;
+    position: relative;
+    left: 25px;
+    font-size:120%;
+}
+
+#time{
+    color: white;
+    position: fixed;
+    right: 10px;
+    font-size:120%;
+}
+
+
+
+
+#loginLogo{
+position:fixed;
+top:90px;
+right:100px;
+
+}
+
+#buzzlogo{
+position:fixed;
+top:120px;
+right:300px;
+
+}
+
+#buzzlogo .heading{
+position:relative;
+color: white;
+left:15px;
+font-weight:bold;
+font-size:150%;
+}
+
+#back{
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+}
+
